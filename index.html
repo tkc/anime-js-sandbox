@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>animejs sandbox</title>
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .mdl-cell {
+            box-sizing: border-box;
+            height: 200px;
+            padding-left: 8px;
+            padding-top: 4px;
+            background-color: rgba(48, 59, 142, 0.98);
+        }
+
+        .mdl-grid:first-of-type .mdl-cell {
+            height: 200px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .title {
+            margin: 20px 0px 50px 0px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .item {
+            width: 30px;
+            background: #d61e77;
+            height: 30px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="mdl-grid">
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Translate X</p>
+        <div class="translatex item"></div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Multiple Timing</p>
+        <div class="multipletiming item"></div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Random </p>
+        <div class="random item"></div>
+        <div class="random item"></div>
+        <div class="random item"></div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Translate X & Elasticit</p>
+        <div class="elasticity item"></div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Translate Y</p>
+        <div class="translatey item"></div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Rotate</p>
+        <div class="rotate item"></div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Translate X Y</p>
+        <div class="translatexy item"></div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Play/Pause/Restart</p>
+        <div class="sample2 item"></div>
+        <div class="play">play</div>
+        <div class="pause">pause</div>
+        <div class="restart">restart</div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Scale easeInBounce</p>
+        <div class="sample3 item"></div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Scale easeInCirc</p>
+        <div class="sample4 item"></div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Scale easeInCubic</p>
+        <div class="sample5 item"></div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Scale easeInElastic</p>
+        <div class="sample6 item"></div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Scale easeInExpo</p>
+        <div class="sample7 item"></div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Scale easeInOutBack</p>
+        <div class="sample8 item"></div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <p class="title">Scale easeOutElastic</p>
+        <div class="sample9 item"></div>
+    </div>
+
+</div>
+
+<script src="./dist/bundle.js"></script>
+
+</body>
+</html>
