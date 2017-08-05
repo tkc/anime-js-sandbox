@@ -74,9 +74,13 @@
         },
         watch: {
             scale(v) {
-                this.anime.animations[0].tweens[0].to.numbers[0] = v;
-                this.anime.animations[0].tweens[0].to.original = v;
-                this.anime.animations[0].tweens[0].value = v;
+                this.anime.animations.forEach(animation => {
+                    if (animation.property === 'scale') {
+                        this.anime.animations[0].tweens[0].to.numbers[0] = v;
+                        this.anime.animations[0].tweens[0].to.original = v;
+                        this.anime.animations[0].tweens[0].value = v;
+                    }
+                });
             },
             rotate(v) {
                 this.anime.animations.forEach(animation => {
