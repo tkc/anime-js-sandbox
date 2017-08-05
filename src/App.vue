@@ -1,15 +1,18 @@
 <template>
     <div id="app">
         <anime></anime>
+        <svg_font></svg_font>
     </div>
 </template>
 
 <script>
     import anime from './components/Anime.vue'
+    import svg_font from './components/SvgFont.vue'
     export default {
         name: 'app',
         components: {
             anime,
+            svg_font
         },
     }
 </script>
@@ -31,6 +34,7 @@
         justify-content: center;
         align-items: center;
         width: 40%;
+        background-color: rgba(38, 38, 60, 0.69);
     }
 
     .action .setting {

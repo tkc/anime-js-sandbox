@@ -9,7 +9,7 @@
             <div class="parameter">
                 <div class="param-name">Duration</div>
                 <div class="param-value">
-                    <vue-slider ref="slider" :min=1 :max="2000" v-model="duration"></vue-slider>
+                    <vue-slider ref="slider" :min=1 :max="10000" v-model="duration"></vue-slider>
                 </div>
             </div>
             <div class="parameter">
@@ -42,17 +42,11 @@
                     <vue-slider ref="slider" :min="0.1" :max="1" :interval="0.1" v-model="opacity"></vue-slider>
                 </div>
             </div>
-            <div class="referrer">
-                <div class="referrer-name">
-                    <a href="https://github.com/tkc/anime-js-sandbox" target="_blank">GitHub</a>
-                </div>
-            </div>
         </div>
     </div>
 </template>
 
 <script>
-
     import anime from 'animejs'
     import vueSlider from 'vue-slider-component'
 
@@ -69,6 +63,7 @@
                 translateX: 0,
                 translateY: 0,
                 rotate: 360,
+                elasticity:999,
                 opacity: 0.8
             };
         },
@@ -118,6 +113,8 @@
                     }
                 });
             },
+            elasticity(v){
+            },
             borderRadius(v) {
                 this.anime.borderRadius = v;
             },
@@ -137,6 +134,7 @@
                 opacity: this.opacity,
                 easing: 'easeOutElastic',
                 backgroundColor: '#FFF',
+                elasticity: this.elasticity,
                 loop: true
             });
         },
