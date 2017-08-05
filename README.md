@@ -3,7 +3,8 @@
 
 animejs parameter sandbox using Vue.js 2.0
 
-<img width="1190" alt="screen shot 2017-08-06 at 0 25 33" src="https://user-images.githubusercontent.com/181991/28996548-d3a43066-7a3d-11e7-9fca-ac5aa13d2635.png">
+<img width="1189" alt="screen shot 2017-08-06 at 2 06 54" src="https://user-images.githubusercontent.com/181991/28997305-13804c84-7a4c-11e7-92c0-d504dc0f4520.png">
+
 
 ## Build Setup
 
